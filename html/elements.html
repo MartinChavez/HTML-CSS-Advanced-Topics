@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src=""></script>
+    <link rel="stylesheet" href="css/overview.css"/>
+    <title>HTML5: Elements</title>
+</head>
+<body>
+<h1>HTML5: Elements</h1>
+<!-- HTML5 Elements -->
+
+<!-- Section -->
+<!-- Represents a generic document or application section -->
+
+<!-- Section vs Div -->
+<!--
+- Div elements have no semantic meaning and Section elements do
+- Section is used for grouping together thematically related content
+-->
+<section>
+    <h2>Section Tag</h2>
+</section>
+
+<!-- The Document Outline -->
+<!-- It produces an outline summary of an HTML document based on its markup -->
+
+<!-- The following elements have their own self-contained outline -->
+<!--
+- Article
+- Aside
+- Nav
+- Section
+-->
+
+<!-- For example: -->
+<h1>Tile
+<section>
+    <h2>Sub Title</h2>
+</section>
+</h1>
+<!--
+ Will produce the following output:
+ 1. Title
+    1.1 Subtitle
+ -->
+
+<!-- Header -->
+<!-- A group of introductory or navigational aids -->
+<!--
+ - There can be many different headers on a page
+ - Generally, it appears at the top of a document or section, but it is defined by its content rather than its position
+ -->
+<header>
+    Header
+</header>
+
+<!-- Footer -->
+<!-- The footer element represents a footer for its nearest ancestor sectioning content or sectioning root element -->
+<!--
+- The footer element is not position-dependent
+- The footer describes the content it is contained within
+-->
+<footer>
+    Footer
+</footer>
+
+<!-- Aside -->
+<!--
+- Tangentially related to the content surrounding it
+- When used within an article element, the aside contents should be related to that particular article
+  it is contained within
+- When used outside an article element, the aside contents should be specifically related to the site (sidebar)
+- It represents content that is not the primary focus of an article or page,
+  but it is still related to the article or page
+-->
+<aside>
+    Aside
+</aside>
+<!-- Nav -->
+<!--
+- The nav element represents a section of a page that links to other pages or to parts within the page:
+  a section with navigation links
+- The nav element is intended for major navigation
+-->
+<nav>
+    <ul>
+        Nav
+    </ul>
+</nav>
+<!-- Article -->
+<!--
+- The article element represents a complete, or self-contained, composition in a document, page, application, or site
+  and that is, in principle, independently distributable or reusable
+- The article element is another type of section. It is used for self-contained related content
+-->
+<article>
+    Article
+</article>
+<!-- Main -->
+<!--
+- Represents the main content of the body of a document or application
+- The main content area consists of content that is directly related to or expands upon the central topic of a document
+  or central functionality of an application.
+Warnings
+- Do not include more than one main element in a document
+- Do not include the main element inside of an article, aside, footer, header, or nav element
+ -->
+<main>
+    Main
+</main>
+<!-- Figure -->
+<!--
+- The figure element represents a unit of content, optionally with a caption, that is self-contained
+- If removed, it doesn't affect the document's meaning
+-->
+<!-- Figcaption -->
+<!--
+- Represents a caption or legend for a figure
+-->
+<figure>
+    <img src="" alt="figure"/>
+    <figcaption>Fig caption</figcaption>
+</figure>
+<!-- Time -->
+<!--
+- Represents a time on a 24 hour clock or a precise date in the gregorian calendar
+-->
+<time>2015-19-15</time>
+<!-- Use the datetime attribute to get our desired format -->
+<time datetime="2015-19-16">2015/19/15</time>
+</body>
+</html>
