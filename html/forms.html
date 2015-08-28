@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5: Forms</title>
+</head>
+<body>
+<h1>HTML5: Forms</h1>
+<!-- HTML5 Forms -->
+
+<!-- Input Types -->
+<!-- If a browser doesn't support the input type, it defaults to "text" -->
+
+<!-- Search -->
+<!--
+- Represents a one-line plain-text edit control for entering one or more search terms
+- Mobile Safari keyboard changes the main button to "search"
+-->
+<input type="search"/>
+
+<!-- Email -->
+<!--
+- Similar to a text input, but adds usability on mobile devices
+-->
+<input type="email"/>
+
+<!-- Url -->
+<!--
+- Similar to a text input, but adds usability on mobile devices
+-->
+<input type="url"/>
+
+<!-- Date -->
+<!--
+- Represents a control for setting the element's value to a string representing a date
+-->
+<input type="date"/>
+
+<!-- Tel -->
+<!--
+- Similar to a text input, but adds usability on mobile devices
+-->
+<input type="tel"/>
+
+<!-- Number -->
+<!--
+- Represents a precise control for setting the element's value to a string representing a number
+-->
+<input type="number"/>
+
+<!-- Range -->
+<!--
+- Represents an imprecise control for setting the element's value to a string representing a number
+-->
+<input type="range"/>
+
+<!-- Month and week -->
+<!--
+- Creates an input which allows to select the desired month or week (at at time)
+-->
+<input type="month"/>
+<input type="week"/>
+
+<!-- Time and datetime-local -->
+<!--
+- Creates an input which allows to select a given date and time
+-->
+<input type="time"/>
+<input type="datetime-local"/>
+
+<!-- Datetime-local vs datetime -->
+<!--
+- datetime-local does not contain timezone information
+-->
+
+<!-- Color-->
+<!--
+- Represents a color-well control, for setting the element's value to a string representing a simple color
+-->
+<input type="color" />
+
+<br/>
+
+<!-- Form elements -->
+
+<!-- Datalist -->
+<!--
+- Represents a set of option elements that represent predefined options for other controls
+-->
+<input type="text" list="numbers"/>
+<datalist id="numbers">
+    <option value="one"></option>
+    <option value="two"></option>
+    <option value="three"></option>
+    <option value="four"></option>
+</datalist>
+
+<!-- Form attributes -->
+
+<!-- Placeholder -->
+<!--
+- Allows you to specify a message that is shown inside the input, hidden when the user starts typing,
+and then returns when focus is lost on the input
+-->
+<input type="text" placeholder="placeholder"/>
+
+<!-- Autofocus -->
+<!--
+- The autofocus attribute will automatically focus the specified input when the page is rendered
+-->
+<input type="text" autofocus/>
+
+<!-- Required -->
+<!--
+- It is placed on input elements and it is used to notify the user if an error field is left blank
+-->
+    <input type="text" required/>
+
+<!-- Pattern -->
+<!--
+- The pattern attribute accepts a Javascript regular expression
+  that can be used to validate a form field to match the pattern
+-->
+<input type="text" pattern="[0-9]{3}"/>
+
+</body>
+</html>
