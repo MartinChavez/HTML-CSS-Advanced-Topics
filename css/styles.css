@@ -1,7 +1,64 @@
 /* CSS3: Styles */
 
+.border-radius{
+    background: grey;
+    height: 50px;
+    width: 200px;
+}
 
-/* Features:
-
-
+/* Border Radius */
+/*
+- This property applies rounded corners to borders
+- To achieve this, you can specify 4 different properties which represents each corner
 */
+
+.border-radius{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* You can use the shorthand version to specify all sides at once */
+.border-radius {
+    border-radius: 15px;
+}
+/* You can specify each border-radius value individually */
+.border-radius {
+    border-radius: 15px 15px 15px 15px;
+    /* top-left top-right bottom-right bottom-left */
+}
+
+/* You can also specify the border-radius value in percentages */
+.border-radius {
+    border-radius: 8%;
+}
+
+/* Box Shadow */
+/*
+- This property specifies a shadow on an element
+*/
+.box-shadow{
+    box-shadow: 1px 2px 2px #000;
+    /* Box shadow properties
+    - Inset: If it is not specified(which is the default), a drop shadow is created, rather than an inset shadow
+    - Offset-x: Move the shadow along the x-axis
+    - Offset-y: Move the shadow along the y-axis
+    - Blur-radius: Alters the blur amount of the shadow, causing it to become bigger and lighter
+    - Spread-radius: Causes the shadow to expand or shrink
+    - Color: Color of the shadow
+    */
+
+    /* If you want to specify the spread-radius instead of blur-radius, you need to add a 0 */
+    box-shadow: 1px 2px 0 2px #000;
+}
+
+/* You can specify multiple box-shadows via a comma-separated list */
+.box-shadow{
+    box-shadow: 1px 2px 2px #000,
+    inset 1px 1px 2px blue;
+}
+/* You can also specify negative values on the box-shadow */
+.box-shadow{
+    box-shadow: -1px -2px 2px #000;
+}
