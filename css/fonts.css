@@ -1,0 +1,33 @@
+/* CSS3: Fonts */
+
+/* Font Face */
+/*
+- Using @font-face, you can use online fonts on websites.
+*/
+
+@font-face {
+    font-family: 'OpenSansRegular'; /* Name that we assign this font */
+    /* You will have to specify multiple font types, which can be added as additional urls()'s to the files */
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    font-style: normal;
+    font-weight: normal;
+}
+
+h1 {
+    /* You need to specify the font-family as the same one established in the @font-face call */
+    /* It is a good practice to provide fallback fonts*/
+    font-family: 'OpenSansRegular', Helvetica;
+}
+
+/* You can alter the @font-face call in order to use the font-weight and font-style properties as usual */
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    font-style: normal;
+    font-weight: bold;
+}
+
+h1 {
+    /* Then you can use the bold version by changing the font-weight instead of the font-family */
+    font-weight: bold;
+}
