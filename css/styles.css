@@ -62,3 +62,170 @@
 .box-shadow{
     box-shadow: -1px -2px 2px #000;
 }
+
+/* Text Shadow */
+/*
+- This property is very similar to box-shadow, but it applies the shadow to text
+*/
+.text-shadow{
+    text-shadow: 1px 2px 2px #000;
+    /* Text shadow properties
+    - Offset-x: Move the shadow along the x-axis
+    - Offset-y: Move the shadow along the y-axis
+    - Blur-radius: Alters the blur amount of the shadow, causing it to become bigger and lighter
+    - Color: Color of the shadow
+    */
+}
+
+/* Box sizing */
+/*
+- This property is used to change the default CSS box model,
+  which is used to calculate widths and heights of given elements
+*/
+/*
+- Note: The Box Model is covered in HTML/CSS: Basics course
+*/
+.box-sizing{
+    border: 2px solid black;
+    margin: 20px;
+    padding: 10px;
+    width: 300px; /* Represents the contents of the box */
+}
+
+/* Content-box */
+/*
+- This is the default value. The width and height are measured by including only the content,
+  but not the border, margin, or padding.
+*/
+/* Padding-box */
+/*
+- The width and height include the padding, but do not include the border or margin
+*/
+.box-sizing{
+    /* The padding has been included in the width (content) area,so they are treated as one region*/
+    box-sizing: padding-box;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 10px;
+    width: 300px; /* Represents the contents of the box */
+}
+/* Border-box */
+/*
+- The width and height include the padding and border, but do not include the margin
+*/
+.box-sizing{
+    /* The padding and the border has been included in the width(content) area, so they are treated as one region*/
+    box-sizing: border-box;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 10px;
+    width: 300px; /* Represents the contents of the box */
+}
+
+/* Multiple backgrounds */
+/*
+- CSS3 allows you to apply multiple backgrounds to an element.
+- The multiple backgrounds are stacked in the order in which you specify them
+- You can then specify the background position for each element
+*/
+.multiple-backgrounds {
+    background-image: url(../img/js.jpg), url(../img/html.jpg);
+    background-position: top left, center right;
+    background-repeat: no-repeat, no-repeat;
+}
+
+/* These properties can be specified in one line as well */
+.multiple-backgrounds {
+    background: url(../img/js.jpg), url(../img/html.jpg) no-repeat, no-repeat top left, center right;
+}
+/* Color */
+/*
+- CSS3 provides multiple ways to work with color
+  * RGBa:
+    - Represents the three additive primary colors, red, green, and blue.
+    - In CSS3, we can also pass the alpha value (the "a" in RGBa) which represents the opacity of a color
+  * HSLa:
+    - Stands for Hue, Saturation and Lightness
+    - You can specify the alpha value for the opacity of the color
+*/
+.RGBa{
+    color: rgba(0,0,0,0.75); /* We are specifying a 75% opaque black color value */
+}
+.HSLa{
+    color: hsla(240,100% ,50%,0.75);
+    /* The parameters have the following order:
+     - Hue
+     - Saturation
+     - Lightness
+     - Alpha value
+     */
+}
+
+/* HSLa vs RGBa */
+/*
+- HSLa is more intuitive than RGBa, and it's much easier to make color adjustments fast
+*/
+
+/* Opacity */
+/*
+- Allows you to specify the opacity of an element using the opacity property
+- Opacity on an element affects all elements that are nested inside
+*/
+.opacity{
+    /* Represents a 45% opaque color value */
+    opacity: 0.45;
+}
+
+/* Gradients */
+/*
+- Smooth transitions between two or more colors
+*/
+
+/* Linear Gradients */
+/*
+- We need to specify the stating point, then ending point, and optional stop-color points.
+*/
+.linear-gradient{
+    /* The parameters are the following:
+    - Direction: This can be specified through an angle or a keyword
+      - The angle is generally a degree (34deg)
+      - The side-or-corner consists of two keywords (left or right) and (top or bottom)
+    - Color Stops: Consists of a color and optional stop position, which can be either a percentage or length
+    */
+    background: linear-gradient(to bottom, red, yellow);
+}
+
+/* Radial Gradients */
+/*
+- Unlike a linear gradient, creates a gradient that extends from an origin, the center of the element, extending
+  outward in a circular or elliptical shape
+- Consists of three parts: center, the ending shape contour and position, and color stops
+*/
+.radial-gradient{
+    /* Creates a two-color elliptical gradient that radiates from the center by default */
+    background: radial-gradient(aqua,blue);
+    /*
+    Parameters (in order):
+    - The shape of the gradient;circle or ellipsis. The default is ellipsis
+    - The size of the gradient, which consist of keywords
+      (closest-side, closest-corner, farthest-side and farthest-corner*) *default
+    - Position (same as background-position). Default is center
+    - Color stops
+    */
+    background: radial-gradient(circle at top left, aqua, blue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
