@@ -6,15 +6,12 @@ Use this tutorial as a guide to learn HTML5 and CSS3. Each unit contains an anno
 
 Topics
 ================
- - Basics
- - Divs
- - Fonts
- - Hexadecimal Colors
- - Images
- - Links
- - Selectors
- - The Box Model
- - Web Forms
+
+- Transforms: Translate
+- Transforms: Rotate
+- Transforms: Scale
+- Transforms: Skew
+- Transitions
  
 HTML Basics
 ====================
@@ -102,195 +99,107 @@ HTML Basics
     <li>List Item 3</li>
 </ol>
 ```
-CSS Basics
+CSS3: Animations
 ====================
 ```CSS
-/* CSS */
+/* CSS3: Animations */
 
-/* CSS is the language for describing the presentation of HTML elements */
-
-/* Selectors*/
-/* CSS elements that allow you to find HTML elements */
-
-/* Selectors: Type*/
-/* You can create a Type selectors by writing the tag name without <> brackets */
-p {
-    text-overline: 3;/* You can change any property of the tag */
-}
-
-/*Selector: Syntax*/
+/* Transforms */
 /*
-selectorName {
-    property: value;
-}
+- This property allows you to translate, rotate, scale, and skew elements in CSS
 */
 
-/* A single selector can change multiple properties*/
-p {
-    text-overline: 3;
-    text-underline: dot-dash;
-    color: red;
+/* Translate */
+/*
+- The translate() method moves an element from its current position
+  (according to the parameters given for the X-axis and the Y-axis).
+*/
+.transform{
+    /* Translate the element 20px to the right */
+    /* Translate the element 30px to the down */
+    transform: translate(20px, 30px);
+    /* Translate parameters*/
+    /*
+    - A translation value for the x-axis, which can be either a length or a percentage
+    - A translation value for the y-axis, which can be either a length or  a percentage, if not specified,the value is 0
+    */
+}
+/* It is possible to use TranslateX and translateY to translate the x and y values individually */
+.transform {
+    transform: translateX(30px);
+}
+.transform {
+    transform: translateY(40px);
 }
 
-/* Selectors will select all matching tags on the page and apply the properties*/
-
-/* Descendant Selectors */
-/* They can be used to select tags only if they are children of another tag*/
-
-ul li {
-    font-size: 30px;
-    color: darkgreen;
+/* Rotate */
+/*
+-  It is possible to rotate an element clockwise around its origin by the specified angle
+*/
+.rotate {
+    transform: rotate(45deg);
 }
 
-/* Pseudo Selectors*/
-/* Pseudo-selector is a modifier that can be added to a selector to select a tag
-only when a certain condition has occurred */
-ul li:hover{
-    color: pink;
+/* Scale */
+/*
+- You can do a 2D scale by a specified unitless number
+*/
+.scale {
+    /* The element is scaled to the unitless number: 4 */
+    /* If you don't specify a value for y-axis, it defaults to the value of x-axis */
+    transform: scale(4, 1);
 }
 
-/* Pseudo Selector: First Child*/
-/* The :first-child pseudo-selector can be applied to narrow the amount of children selected */
-ol li:first-child{
-    color: lightcoral;
-}
-```
-
-The Box Model
-====================
-```CSS
-/* The Box Model */
-
-/*Every tag shown in the body is contained in an invisible rectangle called Box*/
-/*The box model is a way to describe the borders and spacing in between the boxes of each tag*/
-
-/*Block-level tags*/
-
-/*The content of block-level tags take up the entire width (horizontal space) of the container*/
-/*Every box is pushed to the line below*/
-
-/*Examples of block-level tags : */
-/* h1 , h2,  h3,  p,  ul,  li*/
-
-/*Inline-level tags*/
-/*Every tag that is not block-level, is called inline-level/
-/*The content of these tags do not take the entire width of the container */
-
-/*Examples of inline-level tags: */
-/* a, img , input, label*/
-
-/*Converting block-level tags into inline-level tags*/
-/*Allow you to display items horizontally instead of vertically*/
-
-ul li {
-    display: inline;
+/* Skew */
+/*
+- An element is skewed around the x or y axis by the angle specified
+- You can use skewX and skewY that take an angle as parameters
+*/
+.skew{
+    transform: skewX(-25deg);
+    transform: skewY(25deg);
 }
 
-/*Box Model Parts*/
-
-/*Content area*/
-/*Contains the actual content (text, images, etc.)*/
-/*It will take up as much vertical space as it needs to display the content inside*/
-
-/*Padding*/
-/*Padding is a layer on every edge of the content area*/
-/*Padding can be added to the top, right, bottom or left of the content area*/
-
-/*Border*/
-/*Border can be added to the top, right, bottom or left of the padding*/
-
-/*Margin*/
-/*Border can be added to the top, right, bottom or left of the border*/
-
-/*Box Model: Size*/
-/*The full size of a box is calculated by adding all of these properties*/
-/* Content Area width + padding-left + padding-right + border-left + border-right + margin-left + margin-right*/
-
-/*Applying the box model properties*/
-/*It is possible to add every property individually*/
-/*Padding*/
-h2 {
-    padding-top: 4px;
-    padding-bottom: 8px;
-    padding-right: 9px;
-    padding-left: 3px;
+/* Transitions */
+/*
+- Allow you to transition between two states of a specified element
+*/
+.transition{
+    /* Parameters (in order):
+    - Property: The CSS property you want to transition
+    - Duration: The amount of time you want the transition to take place
+    - Timing function: Timing of the transition itself (ease, ease-in, ease-in-out, linear, etc)
+    - Delay: The amount of time to wait between the change that is being requested on a specific property,
+      and the start of the transition
+    */
+    /* The background-color transitions from grey to crimson over the period of .5s*/
+    transition: background-color 0.5s ease-in-out;
+}
+.transition:hover{
+    background-color: crimson;
 }
 
-/*We can also add these properties with a single line*/
-h2 {
-    padding: 4px 9px 8px 3px;
-    /*top right bottom left*/
+.transition:hover{
+    color: navajowhite;
+}
+/* Using 'all' as the transition-property, we can transition multiple properties at once */
+.transition{
+    transition: all 0.5s ease-in-out;
+}
+
+/* Progressive Enhancement */
+/*
+- Refers to the use of newer features that add to the experience in modern browsers that support those features,
+  but doesn't detract from the experience in older browsers.
+*/
+.progressive-enhancement{
+    background: #ccc;
+    /* If the border-radius and box-shadow properties aren't supported, we still get a usable experience */
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.75);
 }
 ```
-Web Forms
-====================
-```HTML
-<!-- Web Forms -->
-<!-- A Form is an element that allows a web page to get input from a user -->
 
-<!-- Forms usually contain labels, inputs, text areas and submit buttons -->
-<!-- In general, the processing of a form's information requires a back-end service -->
-
-<!-- <form> tag-->
-<!-- You can use it to create a form and add elements inside of it -->
-<form>
-    <!-- <label> tag-->
-    <!-- Describes the type of information the user should enter-->
-    <label>Form</label>
-    <input type="text"/>
-    <!-- <input type="submit"> tag -->
-    <!-- Sends all the information from the form to the server -->
-    <input type="submit" value="Submit"/>
-</form>
-<br/>
-
-<!-- Form <input> types -->
-<!-- The type attribute sets the type of input fields that will be displayed -->
-<!-- These are common <input> types -->
-<form>
-    <input type="text"/>
-    <input type="checkbox"/>
-    <input type="radio"/>
-    <input type="file"/>
-    <input type="password"/>
-    <input type="submit">
-</form>
-```
-```CSS
-/* Styling forms*/
-/* labels and inputs are inline-level tags*/
-/* In general, it is better to display one on top of the other like block-level tags*/
-.styled-form label,input{
-    display: block;
-}
-/*You can style the elements inside the form like any block-level tag*/
-.styled-form label{
-    margin-bottom: 10px;
-}
-.styled-form input{
-    width: 500px;
-    margin-bottom: 25px;
-}
-
-/* Attribute selectors */
-/* A method to style a tag based on one of its attributes*/
-
-/* Styling the submit button separately */
-/* The submit button is an input tag so the previous input selector properties are affecting the way it is displayed */
-
-/* In order to create this selector, you need: */
-/* The name of the attribute and the value of the attribute */
-.styled-form input[type=submit]{
-    width: 120px;
-    font-size: 30px;
-}
-
-/* Styling Inputs */
-/* The container around an input is a border, so you can style it with the border property */
-.styled-form input[type=text]{
-    border: 2px solid #7facaa;
-}
-```
 
 Run and Play
 ====================
