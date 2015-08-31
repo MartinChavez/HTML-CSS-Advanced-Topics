@@ -6,98 +6,56 @@ Use this tutorial as a guide to learn HTML5 and CSS3. Each unit contains an anno
 
 Topics
 ================
-
-- Transforms: Translate
-- Transforms: Rotate
-- Transforms: Scale
-- Transforms: Skew
-- Transitions
+- HTML5: Basics
+- Transform: Translate
+- Transform: Rotate
+- Transform: Scale
+- Transform: Skew
+- Transition
  
-HTML Basics
+HTML5: Overview
 ====================
 ```HTML
-<!--HTML: Basics-->
+<!-- HTML5 -->
+<!-- HTML5 is the definition used to refer to the latest version of HTML -->
+<!--
+ Features:
+* New HTML elements and attributes
+* CSS3 support
+* Video and audio elements
+* 2D and 3D graphics
+* Local storage
+* Local SQL database
+-->
 
-<!--HTML: HyperText Markup Language -->
-<!--HTML is the standard markup language used to create web pages-->
-
-<!-- To add content, you should use HTML tags -->
-<!-- These pre-defined tags, have opening and closing versions -->
-
-
-<!-- <!DOCTYPE> tag -->
-<!-- Defines the HTML Version the browser should use to display the HTML Tags-->
-<!-- By writing <!DOCTYPE html> and not specifying the version, the browser will use the latest version-->
+<!-- In HTML5, there is only one simple DOCTYPE, it has the following syntax -->
 <!DOCTYPE html>
 
-
-<!-- <html> tag -->
-<!-- All of the HTML tags are placed inside the <html> tag -->
-<!-- You should use it to organize all of the other tags for the Web Page -->
-<html>
-
-<!-- <head> tag -->
-<!-- All the not-visible content of the web page should be contained on the <head> tag -->
-<!-- You can use this tag to load scripts like CSS and Javascript -->
-
-<!-- Nesting tags: HTML tags can contain other tags -->
-<head lang="en"><!-- the <head> tag is called the parent tag (for <meta> and <title>) -->
+<html lang="en">
+<head>
+    <!-- In HTML5, you can specify the encoding by simply adding the charset attribute -->
     <meta charset="UTF-8">
-    <!-- the <meta> tag is called a children tag (of <head>)-->
-    <title>HTML Basics</title><!-- the <title> tag is called a children tag (of <head>) -->
+
+    <!-- You don't need to specify the type attribute anymore (for <script> and <link>) -->
+    <!-- A modern browser will infer that the file is javascript or css  -->
+    <script src=""></script>
+    <link rel="stylesheet" href="css/overview.css"/>
+
+    <title>HTML/CSS: Overview</title>
 </head>
-
-<!-- <link> tag -->
-<!-- Allows you to reference other files that work together with this file-->
-
-<!-- The type attribute set to text/css lets the browser know you are loading a CSS file -->
-<!-- The 'rel' attribute is an abbreviation for 'relationship' -->
-<!-- The CSS selectors and rules are contained in the CSS file -->
-<link rel="stylesheet" type="text/css" href="../CSS/Basics.css"><!-- The <link> is an empty tag, it doesn't have a closing tag -->
-
-
-<!-- <body> tag -->
-<!-- All the visible content of the web page should be contained in the <body> tag -->
 <body>
+<h1>HTML5: Overview</h1>
 
-<!-- <h*> headers -->
-
-<!-- You can use heading tags to define your content hierarchy -->
-<!-- Higher heading numbers mean the content that appears between the tags is less important -->
-
-<!-- <h1> is an opening tag -->
-<h1>Header H1</h1>
-<!-- </h1> is an closing tag and has a slash before the tag name-->
-<h2>Header H2</h2>
-
-<h3>Header H3</h3>
-<h4>Header H4</h4>
-
-<!-- <p> paragraphs -->
-
-<!-- You can use paragraph tags for non-heading text -->
-<p>This is a paragraph</p>
-<p>This is another paragraph</p>
-
-<!-- <ul> Unordered List -->
-<!-- You can use unordered list tags to display a list fo items -->
-<ul>
-    <!-- <li> list item -->
-    <!-- Every list item needs to be put in a <li> tag -->
-    <li>List Item 1</li>
-    <li>List Item 2</li>
-    <li>List Item 3</li>
-</ul>
-
-<!-- <ol> Ordered List -->
-<!-- You can use ordered list tags to display a list of items in order -->
-<ol>
-    <!-- <li> list item -->
-    <!-- Every list item needs to be put in a <li> tag -->
-    <li>List Item 1</li>
-    <li>List Item 2</li>
-    <li>List Item 3</li>
-</ol>
+<h1>Tag Updates</h1>
+<!-- Tag Updates -->
+<!-- <i> tag represents text in a different "tone", like a thought -->
+<p>This <i>text</i> has the i tag </p>
+<!-- <b> tag represents stylistically offset text  -->
+<p>This <b>text</b> has the b tag </p>
+<!-- <em> tag represents "stress" emphasis -->
+<p>This <em>text</em> has the em tag </p>
+<!-- <strong> tag represents strong importance -->
+<p>This <strong>text</strong> has the strong tag </p>
 ```
 Animations
 ====================
