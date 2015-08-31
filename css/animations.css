@@ -16,11 +16,11 @@
     transform: translate(20px, 30px);
     /* Translate parameters*/
     /*
-    - A translation value for the x-axis, which can be either a length  or percentage
-    - A translation value for the y-axis, which can be either a length  or percentage, if not specified, the value is 0
+    - A translation value for the x-axis, which can be either a length or a percentage
+    - A translation value for the y-axis, which can be either a length or  a percentage, if not specified,the value is 0
     */
 }
-/* It is possible to use TranslateX and translateY to transl;ate the x and y values individually */
+/* It is possible to use TranslateX and translateY to translate the x and y values individually */
 .transform {
     transform: translateX(30px);
 }
@@ -41,9 +41,9 @@
 - You can do a 2D scale by a specified unitless number
 */
 .scale {
-    /* The element is scaled to the unitless number: 1.2 */
+    /* The element is scaled to the unitless number: 4 */
     /* If you don't specify a value for y-axis, it defaults to the value of x-axis */
-    transform: scale(1.2, .3);
+    transform: scale(4, 1);
 }
 
 /* Skew */
@@ -60,7 +60,6 @@
 /*
 - Allow you to transition between two states of a specified element
 */
-
 .transition{
     /* The background-color transitions from grey to crimson over the period of .5s*/
     /* Parameters (in order)
@@ -91,7 +90,7 @@
 */
 .progressive-enhancement{
     background: #ccc;
-    /* If the borser-radius and box-shadow properties aren't supported, we still get a usable experience */
+    /* If the border-radius and box-shadow properties aren't supported, we still get a usable experience */
     border-radius: 10px;
     box-shadow: 0 1px 1px rgba(0,0,0,0.75);
 }
