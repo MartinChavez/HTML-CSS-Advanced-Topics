@@ -6,15 +6,10 @@ Use this tutorial as a guide to learn HTML5 and CSS3. Each unit contains an anno
 
 Topics
 ================
-- HTML5
-
-- Overview
-- Elements
-- Forms
+- HTML5: Overview
+- HTML5 Elements
+- HTML5 Forms
 - The Document Outline
-
-- CSS3
-
 - Transform: Translate
 - Transform: Rotate
 - Transform: Scale
