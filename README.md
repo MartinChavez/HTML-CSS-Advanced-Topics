@@ -1,6 +1,6 @@
 <a name="README"><img src="http://static1.squarespace.com/static/54b6c223e4b0ad6fb5d5569b/t/54bec5a4e4b0c74e7f3b09e9/1421788582011/large_html.jpg" width="300px" height="200px"/></a>
 
-# HTML5/CSS3: Annotated tutorial
+# HTML5/CSS3: Advanced Topics
 
 Use this tutorial as a guide to learn HTML5 and CSS3. Each unit contains an annotated lesson that can assist you in developing your Web Development skills.
 
