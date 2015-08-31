@@ -8,7 +8,13 @@
 
 /* Transforms */
 /*
-- This property allows you to translate, rotate, scale, and skew elements in  CSS
+- This property allows you to translate, rotate, scale, and skew elements in CSS
+*/
+
+/* Translate */
+/*
+- The translate() method moves an element from its current position
+  (according to the parameters given for the X-axis and the Y-axis).
 */
 .transform{
     /* Translate the element 20px to the right */
@@ -61,14 +67,14 @@
 - Allow you to transition between two states of a specified element
 */
 .transition{
-    /* The background-color transitions from grey to crimson over the period of .5s*/
-    /* Parameters (in order)
+    /* Parameters (in order):
     - Property: The CSS property you want to transition
     - Duration: The amount of time you want the transition to take place
     - Timing function: Timing of the transition itself (ease, ease-in, ease-in-out, linear, etc)
     - Delay: The amount of time to wait between the change that is being requested on a specific property,
       and the start of the transition
     */
+    /* The background-color transitions from grey to crimson over the period of .5s*/
     transition: background-color 0.5s ease-in-out;
 }
 .transition:hover{
