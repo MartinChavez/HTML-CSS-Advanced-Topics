@@ -99,7 +99,7 @@ HTML Basics
     <li>List Item 3</li>
 </ol>
 ```
-CSS3: Animations
+Animations
 ====================
 ```CSS
 /* CSS3: Animations */
