@@ -6,7 +6,7 @@ Use this tutorial as a guide to learn HTML5 and CSS3. Each unit contains an anno
 
 Topics
 ================
-- HTML5: Basics
+- HTML5: Overview
 - Transform: Translate
 - Transform: Rotate
 - Transform: Scale
