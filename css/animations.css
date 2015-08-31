@@ -1,2 +1,97 @@
+.transform ,.rotate, .scale, .skew , .transition{
+    background: grey;
+    height: 50px;
+    width: 200px;
+}
+
 /* CSS3: Animations */
 
+/* Transforms */
+/*
+- This property allows you to translate, rotate, scale, and skew elements in  CSS
+*/
+.transform{
+    /* Translate the element 20px to the right */
+    /* Translate the element 30px to the down */
+    transform: translate(20px, 30px);
+    /* Translate parameters*/
+    /*
+    - A translation value for the x-axis, which can be either a length  or percentage
+    - A translation value for the y-axis, which can be either a length  or percentage, if not specified, the value is 0
+    */
+}
+/* It is possible to use TranslateX and translateY to transl;ate the x and y values individually */
+.transform {
+    transform: translateX(30px);
+}
+.transform {
+    transform: translateY(40px);
+}
+
+/* Rotate */
+/*
+-  It is possible to rotate an element clockwise around its origin by the specified angle
+*/
+.rotate {
+    transform: rotate(45deg);
+}
+
+/* Scale */
+/*
+- You can do a 2D scale by a specified unitless number
+*/
+.scale {
+    /* The element is scaled to the unitless number: 1.2 */
+    /* If you don't specify a value for y-axis, it defaults to the value of x-axis */
+    transform: scale(1.2, .3);
+}
+
+/* Skew */
+/*
+- An element is skewed around the x or y axis by the angle specified
+- You can use skewX and skewY that take an angle as parameters
+*/
+.skew{
+    transform: skewX(-25deg);
+    transform: skewY(25deg);
+}
+
+/* Transitions */
+/*
+- Allow you to transition between two states of a specified element
+*/
+
+.transition{
+    /* The background-color transitions from grey to crimson over the period of .5s*/
+    /* Parameters (in order)
+    - Property: The CSS property you want to transition
+    - Duration: The amount of time you want the transition to take place
+    - Timing function: Timing of the transition itself (ease, ease-in, ease-in-out, linear, etc)
+    - Delay: The amount of time to wait between the change that is being requested on a specific property,
+      and the start of the transition
+    */
+    transition: background-color 0.5s ease-in-out;
+}
+.transition:hover{
+    background-color: crimson;
+}
+
+.transition:hover{
+    color: navajowhite;
+}
+/* Using 'all' as the transition-property, we can transition multiple properties at once */
+.transition{
+    transition: all 0.5s ease-in-out;
+}
+
+/* Progressive Enhancement */
+/*
+- Refers to the use of newer features that add to the experience in modern browsers that support those features,
+  but doesn't detract from the experience in older browsers.
+*/
+.progressive-enhancement{
+    background: #ccc;
+    /* If the borser-radius and box-shadow properties aren't supported, we still get a usable experience */
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.75);
+}
