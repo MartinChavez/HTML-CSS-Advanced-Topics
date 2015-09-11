@@ -6,7 +6,7 @@
 */
 
 @font-face {
-    font-family: 'OpenSansRegular'; /* Name that we assign this font */
+    font-family: 'OpenSansRegular'; /* Name that we assign to this font */
     /* You will have to specify multiple font types, which can be added as additional urls()'s to the files */
     src: url('../fonts/OpenSans-Regular-webfont.eot');
     font-style: normal;
