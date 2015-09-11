@@ -553,9 +553,9 @@ h1 {
 
 Run and Play
 ====================
-All the html files are linked to their respective CSS files. Open your browser, change the content and start learning!
+All the html files are linked to their respective CSS files. Open your browser and start learning!
 
-<img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/learnImage.png"/>
+<img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/htmlAdvanced.png"/>
 
 Questions ?
 ====================
