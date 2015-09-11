@@ -555,7 +555,7 @@ Run and Play
 ====================
 All the html files are linked to their respective CSS files. Open your browser and start learning!
 
-<img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/htmlAdvanced3.png"/>
+<img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/htmlAdvanced4.png"/>
 
 Questions ?
 ====================
