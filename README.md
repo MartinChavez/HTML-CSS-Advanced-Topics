@@ -10,8 +10,9 @@ Topics
 - HTML5 Elements
 - HTML5 Forms
 - CSS3 Fonts
-- CSS Styles
+- CSS3 Styles
 - The Document Outline
+- CSS3 Animations
 - Transform: Translate
 - Transform: Rotate
 - Transform: Scale
