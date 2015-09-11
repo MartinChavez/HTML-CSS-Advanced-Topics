@@ -9,6 +9,7 @@ Topics
 - HTML5: Overview
 - HTML5 Elements
 - HTML5 Forms
+- CSS3 Fonts
 - The Document Outline
 - Transform: Translate
 - Transform: Rotate
@@ -190,7 +191,7 @@ Warnings
 <time datetime="2015-19-16">2015/19/15</time>
 ```
 
-Animations
+CSS3 Animations
 ====================
 ```CSS
 /* CSS3: Animations */
@@ -290,125 +291,42 @@ Animations
     box-shadow: 0 1px 1px rgba(0,0,0,0.75);
 }
 ```
-HTML5 Forms
+CSS3 Fonts
 ====================
-```HTML
-<!-- HTML5 Forms -->
+```CSS
+/* CSS3: Fonts */
 
-<!-- Input Types -->
-<!-- If a browser doesn't support the input type, it defaults to "text" -->
+/* Font Face */
+/*
+- Using @font-face, you can use online fonts on websites.
+*/
 
-<!-- Search -->
-<!--
-- Represents a one-line plain-text edit control for entering one or more search terms
-- Mobile Safari keyboard changes the main button to "search"
--->
-<input type="search"/>
+@font-face {
+    font-family: 'OpenSansRegular'; /* Name that we assign to this font */
+    /* You will have to specify multiple font types, which can be added as additional urls()'s to the files */
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    font-style: normal;
+    font-weight: normal;
+}
 
-<!-- Email -->
-<!--
-- Similar to a text input, but adds usability on mobile devices
--->
-<input type="email"/>
+h1 {
+    /* You need to specify the font-family as the same one established in the @font-face call */
+    /* It is a good practice to provide fallback fonts*/
+    font-family: 'OpenSansRegular', Helvetica;
+}
 
-<!-- Url -->
-<!--
-- Similar to a text input, but adds usability on mobile devices
--->
-<input type="url"/>
+/* You can alter the @font-face call in order to use the font-weight and font-style properties as usual */
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    font-style: normal;
+    font-weight: bold;
+}
 
-<!-- Date -->
-<!--
-- Represents a control for setting the element's value to a string representing a date
--->
-<input type="date"/>
-
-<!-- Tel -->
-<!--
-- Similar to a text input, but adds usability on mobile devices
--->
-<input type="tel"/>
-
-<!-- Number -->
-<!--
-- Represents a precise control for setting the element's value to a string representing a number
--->
-<input type="number"/>
-
-<!-- Range -->
-<!--
-- Represents an imprecise control for setting the element's value to a string representing a number
--->
-<input type="range"/>
-
-<!-- Month and week -->
-<!--
-- Creates an input which allows to select the desired month or week (at at time)
--->
-<input type="month"/>
-<input type="week"/>
-
-<!-- Time and datetime-local -->
-<!--
-- Creates an input which allows to select a given date and time
--->
-<input type="time"/>
-<input type="datetime-local"/>
-
-<!-- Datetime-local vs datetime -->
-<!--
-- datetime-local does not contain timezone information
--->
-
-<!-- Color-->
-<!--
-- Represents a color-well control, for setting the element's value to a string representing a simple color
--->
-<input type="color" />
-
-<br/>
-
-<!-- Form elements -->
-
-<!-- Datalist -->
-<!--
-- Represents a set of option elements that represent predefined options for other controls
--->
-<input type="text" list="numbers"/>
-<datalist id="numbers">
-    <option value="one"></option>
-    <option value="two"></option>
-    <option value="three"></option>
-    <option value="four"></option>
-</datalist>
-
-<!-- Form attributes -->
-
-<!-- Placeholder -->
-<!--
-- Allows you to specify a message that is shown inside the input, hidden when the user starts typing,
-and then returns when focus is lost on the input
--->
-<input type="text" placeholder="placeholder"/>
-
-<!-- Autofocus -->
-<!--
-- The autofocus attribute will automatically focus the specified input when the page is rendered
--->
-<input type="text" autofocus/>
-
-<!-- Required -->
-<!--
-- It is placed on input elements and it is used to notify the user if an error field is left blank
--->
-    <input type="text" required/>
-
-<!-- Pattern -->
-<!--
-- The pattern attribute accepts a Javascript regular expression
-  that can be used to validate a form field to match the pattern
--->
-<input type="text" pattern="[0-9]{3}"/>
+h1 {
+    /* Then you can use the bold version by changing the font-weight instead of the font-family */
+    font-weight: bold;
+}
 ```
 
 Run and Play
