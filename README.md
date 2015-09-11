@@ -21,7 +21,7 @@ Topics
 
 Suggested prerequisites
 ====================
-<a name="README">[<img src="http://static1.squarespace.com/static/54b6c223e4b0ad6fb5d5569b/t/54bec5a4e4b0c74e7f3b09e9/1421788582011/large_html.jpg" width="65px" height="50px" />](https://github.com/MartinChavez/HTML-CSS)</a> 
+<a name="README">[<img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/htmlcssblack.jpg" width="65px" height="50px" />](https://github.com/MartinChavez/HTML-CSS)</a> 
 
 HTML5 Overview
 ====================
