@@ -206,7 +206,7 @@ CSS3 Styles
 /* Border Radius */
 /*
 - This property applies rounded corners to borders
-- To achieve this, you can specify 4 different properties which represents each corner
+- To achieve this, you can specify 4 different properties which represent each corner
 */
 
 .border-radius{
