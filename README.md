@@ -430,7 +430,7 @@ CSS3 Animations
 */
 .transform{
     /* Translate the element 20px to the right */
-    /* Translate the element 30px to the down */
+    /* Translate the element 30px down */
     transform: translate(20px, 30px);
     /* Translate parameters*/
     /*
