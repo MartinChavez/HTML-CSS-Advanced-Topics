@@ -467,7 +467,7 @@ CSS3 Animations
 /* Skew */
 /*
 - An element is skewed around the x or y axis by the angle specified
-- You can use skewX and skewY that take an angle as parameters
+- You can use skewX and skewY that use an angle as its parameters
 */
 .skew{
     transform: skewX(-25deg);
