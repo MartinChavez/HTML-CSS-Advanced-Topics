@@ -77,7 +77,7 @@ HTML5 Elements
 
 <!-- Section vs Div -->
 <!--
-- Div elements have no semantic meaning and Section elements do
+- Div elements have no semantic meaning whereas Section elements do
 - Section is used for grouping together thematically related content
 -->
 <section>
