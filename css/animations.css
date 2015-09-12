@@ -26,7 +26,7 @@
     - A translation value for the y-axis, which can be either a length or  a percentage, if not specified,the value is 0
     */
 }
-/* It is possible to use TranslateX and translateY to translate the x and y values individually */
+/* It is possible to use translateX and translateY to translate the x and y values individually */
 .transform {
     transform: translateX(30px);
 }
