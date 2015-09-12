@@ -524,8 +524,8 @@ CSS3 Fonts
 */
 
 @font-face {
-    font-family: 'OpenSansRegular'; /* Name that we assign to this font */
-    /* You will have to specify multiple font types, which can be added as additional urls()'s to the files */
+    font-family: 'OpenSansRegular'; /* Name that is assigned to this font */
+    /* It is possible to specify multiple font types, which can be added as additional urls() */
     src: url('../fonts/OpenSans-Regular-webfont.eot');
     font-style: normal;
     font-weight: normal;
