@@ -403,9 +403,9 @@ CSS3 Styles
     background: radial-gradient(aqua,blue);
     /*
     Parameters (in order):
-    - The shape of the gradient;circle or ellipsis. The default is ellipsis
+    - The shape of the gradient;circle or ellipsis. The default is ellipsis.
     - The size of the gradient, which consist of keywords
-      (closest-side, closest-corner, farthest-side and farthest-corner*) *default
+      (closest-side, closest-corner, farthest-side and farthest-corner*). *default
     - Position (same as background-position). Default is center
     - Color stops
     */
