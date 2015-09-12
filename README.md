@@ -1,4 +1,4 @@
-<a name="README"><img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/htmlcss.jpg" width="300px" height="200px"/></a>
+<a name="README"><img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/htmlcssblack.jpg" width="300px" height="200px"/></a>
 
 # HTML5/CSS3: Advanced Topics
 
