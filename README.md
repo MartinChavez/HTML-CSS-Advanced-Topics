@@ -1,4 +1,4 @@
-<a name="README"><img src="http://static1.squarespace.com/static/54b6c223e4b0ad6fb5d5569b/t/54bec5a4e4b0c74e7f3b09e9/1421788582011/large_html.jpg" width="300px" height="200px"/></a>
+<a name="README"><img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/htmlcssblack.jpg" width="300px" height="200px"/></a>
 
 # HTML5/CSS3: Advanced Topics
 
@@ -6,100 +6,414 @@ Use this tutorial as a guide to learn HTML5 and CSS3. Each unit contains an anno
 
 Topics
 ================
+- HTML5 Overview
+- HTML5 Elements
+- HTML5 Forms
+- CSS3 Fonts
+- CSS3 Styles
+- The Document Outline
+- CSS3 Animations
+- Transform: Translate
+- Transform: Rotate
+- Transform: Scale
+- Transform: Skew
+- Transition
 
-- Transforms: Translate
-- Transforms: Rotate
-- Transforms: Scale
-- Transforms: Skew
-- Transitions
- 
-HTML Basics
+Suggested prerequisites
+====================
+<a name="README">[<img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/htmlcss.jpg" width="65px" height="50px" />](https://github.com/MartinChavez/HTML-CSS)</a> 
+
+HTML5 Overview
 ====================
 ```HTML
-<!--HTML: Basics-->
+<!-- HTML5 -->
+<!-- HTML5 is the definition used to refer to the latest version of HTML -->
+<!--
+ Features:
+* New HTML elements and attributes
+* CSS3 support
+* Video and audio elements
+* 2D and 3D graphics
+* Local storage
+* Local SQL database
+-->
 
-<!--HTML: HyperText Markup Language -->
-<!--HTML is the standard markup language used to create web pages-->
-
-<!-- To add content, you should use HTML tags -->
-<!-- These pre-defined tags, have opening and closing versions -->
-
-
-<!-- <!DOCTYPE> tag -->
-<!-- Defines the HTML Version the browser should use to display the HTML Tags-->
-<!-- By writing <!DOCTYPE html> and not specifying the version, the browser will use the latest version-->
+<!-- In HTML5, there is only one simple DOCTYPE, it has the following syntax -->
 <!DOCTYPE html>
 
-
-<!-- <html> tag -->
-<!-- All of the HTML tags are placed inside the <html> tag -->
-<!-- You should use it to organize all of the other tags for the Web Page -->
-<html>
-
-<!-- <head> tag -->
-<!-- All the not-visible content of the web page should be contained on the <head> tag -->
-<!-- You can use this tag to load scripts like CSS and Javascript -->
-
-<!-- Nesting tags: HTML tags can contain other tags -->
-<head lang="en"><!-- the <head> tag is called the parent tag (for <meta> and <title>) -->
+<html lang="en">
+<head>
+    <!-- In HTML5, you can specify the encoding by simply adding the charset attribute -->
     <meta charset="UTF-8">
-    <!-- the <meta> tag is called a children tag (of <head>)-->
-    <title>HTML Basics</title><!-- the <title> tag is called a children tag (of <head>) -->
+
+    <!-- You don't need to specify the type attribute anymore (for <script> and <link>) -->
+    <!-- A modern browser will infer that the file is javascript or css  -->
+    <script src=""></script>
+    <link rel="stylesheet" href="css/overview.css"/>
+
+    <title>HTML/CSS: Overview</title>
 </head>
-
-<!-- <link> tag -->
-<!-- Allows you to reference other files that work together with this file-->
-
-<!-- The type attribute set to text/css lets the browser know you are loading a CSS file -->
-<!-- The 'rel' attribute is an abbreviation for 'relationship' -->
-<!-- The CSS selectors and rules are contained in the CSS file -->
-<link rel="stylesheet" type="text/css" href="../CSS/Basics.css"><!-- The <link> is an empty tag, it doesn't have a closing tag -->
-
-
-<!-- <body> tag -->
-<!-- All the visible content of the web page should be contained in the <body> tag -->
 <body>
+<h1>HTML5: Overview</h1>
 
-<!-- <h*> headers -->
-
-<!-- You can use heading tags to define your content hierarchy -->
-<!-- Higher heading numbers mean the content that appears between the tags is less important -->
-
-<!-- <h1> is an opening tag -->
-<h1>Header H1</h1>
-<!-- </h1> is an closing tag and has a slash before the tag name-->
-<h2>Header H2</h2>
-
-<h3>Header H3</h3>
-<h4>Header H4</h4>
-
-<!-- <p> paragraphs -->
-
-<!-- You can use paragraph tags for non-heading text -->
-<p>This is a paragraph</p>
-<p>This is another paragraph</p>
-
-<!-- <ul> Unordered List -->
-<!-- You can use unordered list tags to display a list fo items -->
-<ul>
-    <!-- <li> list item -->
-    <!-- Every list item needs to be put in a <li> tag -->
-    <li>List Item 1</li>
-    <li>List Item 2</li>
-    <li>List Item 3</li>
-</ul>
-
-<!-- <ol> Ordered List -->
-<!-- You can use ordered list tags to display a list of items in order -->
-<ol>
-    <!-- <li> list item -->
-    <!-- Every list item needs to be put in a <li> tag -->
-    <li>List Item 1</li>
-    <li>List Item 2</li>
-    <li>List Item 3</li>
-</ol>
+<h1>Tag Updates</h1>
+<!-- Tag Updates -->
+<!-- <i> tag represents text in a different "tone", like a thought -->
+<p>This <i>text</i> has the i tag </p>
+<!-- <b> tag represents stylistically offset text  -->
+<p>This <b>text</b> has the b tag </p>
+<!-- <em> tag represents "stress" emphasis -->
+<p>This <em>text</em> has the em tag </p>
+<!-- <strong> tag represents strong importance -->
+<p>This <strong>text</strong> has the strong tag </p>
 ```
-Animations
+HTML5 Elements
+====================
+```HTML
+<!-- HTML5 Elements -->
+
+<!-- Section -->
+<!-- Represents a generic document or application section -->
+
+<!-- Section vs Div -->
+<!--
+- Div elements have no semantic meaning whereas Section elements do
+- Section is used for grouping together thematically related content
+-->
+<section>
+    <h2>Section Tag</h2>
+</section>
+
+<!-- The Document Outline -->
+<!-- It produces an outline summary of an HTML document based on its markup -->
+
+<!-- The following elements have their own self-contained outline -->
+<!--
+- Article
+- Aside
+- Nav
+- Section
+-->
+
+<!-- For example: -->
+<h1>Tile
+<section>
+    <h2>Sub Title</h2>
+</section>
+</h1>
+<!--
+ Will produce the following output:
+ 1. Title
+    1.1 Subtitle
+ -->
+
+<!-- Header -->
+<!-- A group of introductory or navigational aids -->
+<!--
+ - There can be many different headers on a page
+ - Generally, it appears at the top of a document or section, but it is defined by its content rather than its position
+ -->
+<header>
+    Header
+</header>
+
+<!-- Footer -->
+<!-- The footer element represents a footer for its nearest ancestor sectioning content or sectioning root element -->
+<!--
+- The footer element is not position-dependent
+- The footer describes the content it is contained within
+-->
+<footer>
+    Footer
+</footer>
+
+<!-- Aside -->
+<!--
+- Tangentially related to the content surrounding it
+- When used within an article element, the aside contents should be related to that particular article
+  it is contained within
+- When used outside an article element, the aside contents should be specifically related to the site (sidebar)
+- It represents content that is not the primary focus of an article or page,
+  but it is still related to the article or page
+-->
+<aside>
+    Aside
+</aside>
+<!-- Nav -->
+<!--
+- The nav element represents a section of a page that links to other pages or to parts within the page:
+  a section with navigation links
+- The nav element is intended for major navigation
+-->
+<nav>
+    <ul>
+        Nav
+    </ul>
+</nav>
+<!-- Article -->
+<!--
+- The article element represents a complete, or self-contained, composition in a document, page, application, or site
+  and that is, in principle, independently distributable or reusable
+- The article element is another type of section. It is used for self-contained related content
+-->
+<article>
+    Article
+</article>
+<!-- Main -->
+<!--
+- Represents the main content of the body of a document or application
+- The main content area consists of content that is directly related to or expands upon the central topic of a document
+  or central functionality of an application.
+Warnings
+- Do not include more than one main element in a document
+- Do not include the main element inside of an article, aside, footer, header, or nav element
+ -->
+<main>
+    Main
+</main>
+<!-- Figure -->
+<!--
+- The figure element represents a unit of content, optionally with a caption, that is self-contained
+- If removed, it doesn't affect the document's meaning
+-->
+<!-- Figcaption -->
+<!--
+- Represents a caption or legend for a figure
+-->
+<figure>
+    <img src="" alt="figure"/>
+    <figcaption>Fig caption</figcaption>
+</figure>
+<!-- Time -->
+<!--
+- Represents a time on a 24 hour clock or a precise date in the gregorian calendar
+-->
+<time>2015-19-15</time>
+<!-- Use the datetime attribute to get our desired format -->
+<time datetime="2015-19-16">2015/19/15</time>
+```
+CSS3 Styles
+====================
+```CSS
+/* CSS3: Styles */
+
+.border-radius{
+    background: grey;
+    height: 50px;
+    width: 200px;
+}
+
+/* Border Radius */
+/*
+- This property applies rounded corners to borders
+- To achieve this, you can specify 4 different properties which represents each corner
+*/
+
+.border-radius{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* You can use the shorthand version to specify all sides at once */
+.border-radius {
+    border-radius: 15px;
+}
+/* You can specify each border-radius value individually */
+.border-radius {
+    border-radius: 15px 15px 15px 15px;
+    /* top-left top-right bottom-right bottom-left */
+}
+
+/* You can also specify the border-radius value in percentages */
+.border-radius {
+    border-radius: 8%;
+}
+
+/* Box Shadow */
+/*
+- This property specifies a shadow on an element
+*/
+.box-shadow{
+    box-shadow: 1px 2px 2px #000;
+    /* Box shadow properties
+    - Inset: If it is not specified(which is the default), a drop shadow is created, rather than an inset shadow
+    - Offset-x: Move the shadow along the x-axis
+    - Offset-y: Move the shadow along the y-axis
+    - Blur-radius: Alters the blur amount of the shadow, causing it to become bigger and lighter
+    - Spread-radius: Causes the shadow to expand or shrink
+    - Color: Color of the shadow
+    */
+
+    /* If you want to specify the spread-radius instead of blur-radius, you need to add a 0 */
+    box-shadow: 1px 2px 0 2px #000;
+}
+
+/* You can specify multiple box-shadows via a comma-separated list */
+.box-shadow{
+    box-shadow: 1px 2px 2px #000,
+    inset 1px 1px 2px blue;
+}
+/* You can also specify negative values on the box-shadow */
+.box-shadow{
+    box-shadow: -1px -2px 2px #000;
+}
+
+/* Text Shadow */
+/*
+- This property is very similar to box-shadow, but it applies the shadow to text
+*/
+.text-shadow{
+    text-shadow: 1px 2px 2px #000;
+    /* Text shadow properties
+    - Offset-x: Move the shadow along the x-axis
+    - Offset-y: Move the shadow along the y-axis
+    - Blur-radius: Alters the blur amount of the shadow, causing it to become bigger and lighter
+    - Color: Color of the shadow
+    */
+}
+
+/* Box sizing */
+/*
+- This property is used to change the default CSS box model,
+  which is used to calculate widths and heights of given elements
+*/
+/*
+- Note: The Box Model is covered in HTML/CSS: Basics course
+*/
+.box-sizing{
+    border: 2px solid black;
+    margin: 20px;
+    padding: 10px;
+    width: 300px; /* Represents the contents of the box */
+}
+
+/* Content-box */
+/*
+- This is the default value. The width and height are measured by including only the content,
+  but not the border, margin, or padding.
+*/
+/* Padding-box */
+/*
+- The width and height include the padding, but do not include the border or margin
+*/
+.box-sizing{
+    /* The padding has been included in the width (content) area,so they are treated as one region*/
+    box-sizing: padding-box;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 10px;
+    width: 300px; /* Represents the contents of the box */
+}
+/* Border-box */
+/*
+- The width and height include the padding and border, but do not include the margin
+*/
+.box-sizing{
+    /* The padding and the border has been included in the width(content) area, so they are treated as one region*/
+    box-sizing: border-box;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 10px;
+    width: 300px; /* Represents the contents of the box */
+}
+
+/* Multiple backgrounds */
+/*
+- CSS3 allows you to apply multiple backgrounds to an element.
+- The multiple backgrounds are stacked in the order in which you specify them
+- You can then specify the background position for each element
+*/
+.multiple-backgrounds {
+    background-image: url(../img/js.jpg), url(../img/html.jpg);
+    background-position: top left, center right;
+    background-repeat: no-repeat, no-repeat;
+}
+
+/* These properties can be specified in one line as well */
+.multiple-backgrounds {
+    background: url(../img/js.jpg), url(../img/html.jpg) no-repeat, no-repeat top left, center right;
+}
+/* Color */
+/*
+- CSS3 provides multiple ways to work with color
+  * RGBa:
+    - Represents the three additive primary colors, red, green, and blue.
+    - In CSS3, we can also pass the alpha value (the "a" in RGBa) which represents the opacity of a color
+  * HSLa:
+    - Stands for Hue, Saturation and Lightness
+    - You can specify the alpha value for the opacity of the color
+*/
+.RGBa{
+    color: rgba(0,0,0,0.75); /* We are specifying a 75% opaque black color value */
+}
+.HSLa{
+    color: hsla(240,100% ,50%,0.75);
+    /* The parameters have the following order:
+     - Hue
+     - Saturation
+     - Lightness
+     - Alpha value
+     */
+}
+
+/* HSLa vs RGBa */
+/*
+- HSLa is more intuitive than RGBa, and it's much easier to make color adjustments fast
+*/
+
+/* Opacity */
+/*
+- Allows you to specify the opacity of an element using the opacity property
+- Opacity on an element affects all elements that are nested inside
+*/
+.opacity{
+    /* Represents a 45% opaque color value */
+    opacity: 0.45;
+}
+
+/* Gradients */
+/*
+- Smooth transitions between two or more colors
+*/
+
+/* Linear Gradients */
+/*
+- We need to specify the stating point, then ending point, and optional stop-color points.
+*/
+.linear-gradient{
+    /* The parameters are the following:
+      - Direction: This can be specified through an angle or a keyword
+      - The angle is generally a degree (34deg)
+      - The side-or-corner consists of two keywords (left or right) and (top or bottom)
+    - Color Stops: Consists of a color and optional stop position, which can be either a percentage or length
+    */
+    background: linear-gradient(to bottom, red, yellow);
+}
+
+/* Radial Gradients */
+/*
+- Unlike a linear gradient, creates a gradient that extends from an origin, the center of the element, extending
+  outward in a circular or elliptical shape
+- Consists of three parts: center, the ending shape contour and position, and color stops
+*/
+.radial-gradient{
+    /* Creates a two-color elliptical gradient that radiates from the center by default */
+    background: radial-gradient(aqua,blue);
+    /*
+    Parameters (in order):
+    - The shape of the gradient;circle or ellipsis. The default is ellipsis.
+    - The size of the gradient, which consist of keywords
+      (closest-side, closest-corner, farthest-side and farthest-corner*). *default
+    - Position (same as background-position). Default is center
+    - Color stops
+    */
+    background: radial-gradient(circle at top left, aqua, blue);
+}
+
+```
+CSS3 Animations
 ====================
 ```CSS
 /* CSS3: Animations */
@@ -116,7 +430,7 @@ Animations
 */
 .transform{
     /* Translate the element 20px to the right */
-    /* Translate the element 30px to the down */
+    /* Translate the element 30px down */
     transform: translate(20px, 30px);
     /* Translate parameters*/
     /*
@@ -199,13 +513,49 @@ Animations
     box-shadow: 0 1px 1px rgba(0,0,0,0.75);
 }
 ```
+CSS3 Fonts
+====================
+```CSS
+/* CSS3: Fonts */
 
+/* Font Face */
+/*
+- Using @font-face, you can use online fonts on websites.
+*/
+
+@font-face {
+    font-family: 'OpenSansRegular'; /* Name that we assign to this font */
+    /* You will have to specify multiple font types, which can be added as additional urls()'s to the files */
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    font-style: normal;
+    font-weight: normal;
+}
+
+h1 {
+    /* You need to specify the font-family as the same one established in the @font-face call */
+    /* It is a good practice to provide fallback fonts*/
+    font-family: 'OpenSansRegular', Helvetica;
+}
+
+/* You can alter the @font-face call in order to use the font-weight and font-style properties as usual */
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    font-style: normal;
+    font-weight: bold;
+}
+
+h1 {
+    /* Then you can use the bold version by changing the font-weight instead of the font-family */
+    font-weight: bold;
+}
+```
 
 Run and Play
 ====================
-All the html files are linked to their respective CSS files. Open your browser, change the content and start learning!
+All the html files are linked to their respective CSS files. Open your browser and start learning!
 
-<img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/learnImage.png"/>
+<img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/htmlAdvanced4.png"/>
 
 Questions ?
 ====================
@@ -223,3 +573,4 @@ Continue Learning
 <a name="README">[<img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/angularadvanced.png" width="50px" height="50px" />](https://github.com/MartinChavez/AngularJS-Advanced-Topics)</a>
 <a name="README">[<img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/csharp7.png" width="50px" height="50px" />](https://github.com/MartinChavez/CSharp)</a>
 <a name="README">[<img src="http://precision-software.com/wp-content/uploads/2014/04/jQurery.gif" width="50px" height="50px" />](https://github.com/MartinChavez/jQueryBasics)</a>
+<a name="README">[<img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/htmlcss.jpg" width="50px" height="50px" />](https://github.com/MartinChavez/HTML-CSS)</a>
