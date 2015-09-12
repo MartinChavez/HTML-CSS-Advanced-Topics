@@ -384,7 +384,7 @@ CSS3 Styles
 */
 .linear-gradient{
     /* The parameters are the following:
-    - Direction: This can be specified through an angle or a keyword
+      - Direction: This can be specified through an angle or a keyword
       - The angle is generally a degree (34deg)
       - The side-or-corner consists of two keywords (left or right) and (top or bottom)
     - Color Stops: Consists of a color and optional stop position, which can be either a percentage or length
