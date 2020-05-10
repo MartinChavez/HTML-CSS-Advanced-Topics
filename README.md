@@ -557,13 +557,9 @@ All the html files are linked to their respective CSS files. Open your browser a
 
 <img src="https://s3-us-west-2.amazonaws.com/testdrivenlearningbucket/htmlAdvanced4.png"/>
 
-Contact
-====================
-[<img src="https://s3-us-west-2.amazonaws.com/martinsocial/MARTIN2.png" />](http://martinchavezaguilar.com/)
-[<img src="https://s3-us-west-2.amazonaws.com/martinsocial/github.png" />](https://github.com/martinchavez)
-[<img src="https://s3-us-west-2.amazonaws.com/martinsocial/mail.png" />](mailto:info@martinchavezaguilar.com)
-[<img src="https://s3-us-west-2.amazonaws.com/martinsocial/linkedin.png" />](https://www.linkedin.com/in/martinchavezaguilar)
-[<img src="https://s3-us-west-2.amazonaws.com/martinsocial/twitter.png" />](https://twitter.com/martinchavezag)
+## Author
+
+**[Martin Chavez](https://github.com/MartinChavez)**
 
 Continue Learning
 ====================
